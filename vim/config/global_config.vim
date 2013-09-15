@@ -4,7 +4,7 @@
 " Set 'nocompatible' to ward off unexpected things that your distro might have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
 
-Sets how many lines of history VIM has to remember
+" Sets how many lines of history VIM has to remember
 set history=700
 
 " Attempt to determine the type of a file based on its name and possibly its contents. Use this to allow intelligent auto-indenting for each filetype, and for plugins that are filetype specific
