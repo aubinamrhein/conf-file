@@ -69,8 +69,8 @@ endif
 " Display special characters
 set list
 
-"
-set listchars=eol:$,tab:¤,trail:~,extends:>,precedes:<
+" Choose display characters
+set listchars=eol:$,tab:¤\ ,trail:~,extends:>,precedes:<
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
