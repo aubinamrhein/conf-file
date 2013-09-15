@@ -1,0 +1,2 @@
+source ./config/global_config.vim
+source ./config/user_interface.vim
