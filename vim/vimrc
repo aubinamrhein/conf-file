@@ -1,2 +1,2 @@
-source ./config/global_config.vim
-source ./config/user_interface.vim
+source ./vim/config/global_config.vim
+source ./vim/config/user_interface.vim
