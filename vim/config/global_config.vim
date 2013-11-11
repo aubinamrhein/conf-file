@@ -32,8 +32,8 @@ set visualbell
 set t_vb=
 
 
-" Enable use of the mouse for all modes
-set mouse=a
+" Enable use of the mouse for normal mode
+set mouse=n
 
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
