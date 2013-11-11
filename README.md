@@ -1,4 +1,7 @@
 conf-file
 =========
 
-fichier de configuration pour fedora19
+Configuration file for vim
+Configuration file for bahrc
+Configuration file for git
+
