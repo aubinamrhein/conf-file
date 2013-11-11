@@ -1,2 +1,12 @@
-source ./vim/config/global_config.vim
-source ./vim/config/user_interface.vim
+try
+  source ${HOME}/.vim/config/global_config.vim
+catch
+  "No such file? No problem, just ignore it."
+endtry
+
+
+try
+  source ${HOME}/.vim/config/user_interface.vim
+catch
+  "No such file? No problem, just ignore it."
+endtry
