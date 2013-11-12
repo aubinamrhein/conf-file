@@ -25,4 +25,15 @@ vim_configuration_setup () {
     ln -s ${HOME}/.vim/vimrc ${HOME}/.vimrc
   fi
 }
+
+git_configuration_setup () {
+  if [[ -e ${HOME}/.gitconfig ]] ; then
+    echo "Please remove your file ${HOME}/.gitconfig" >&2
+    return 1
+  else
+    cp ${PATH_DIR}/gitconfig ${HOME}/.gitconfig
+  fi
+}
+
 vim_configuration_setup
+git_configuration_setup
