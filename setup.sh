@@ -1,5 +1,5 @@
 #!/bin/bash -eu
-PATH_DIR=$(dirname $0)
+PATH_DIR=$(dirname "$0")
 
 vim_configuration_setup () {
   echo "$FUNCNAME"
@@ -11,7 +11,7 @@ vim_configuration_setup () {
     echo "Please remove your directory ${HOME}/.vim" >&2
     return 1
   else
-    cp -r ${PATH_DIR}/vim ${HOME}/.vim
+    cp -r "${PATH_DIR}/vim" "${HOME}/.vim"
   fi
 
   #######################
@@ -31,7 +31,7 @@ git_configuration_setup () {
     echo "Please remove your file ${HOME}/.gitconfig" >&2
     return 1
   else
-    cp ${PATH_DIR}/gitconfig ${HOME}/.gitconfig
+    cp "${PATH_DIR}/gitconfig" "${HOME}/.gitconfig"
   fi
 }
 
