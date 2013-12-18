@@ -1,18 +1,20 @@
 [user]
-	name = Amrhein Aubin
-	email = aubin.amrhein@wanadoo.fr
+  name = Amrhein Aubin
+  email = aubin.amrhein@wanadoo.fr
 [core]
-	editor = vim
-	autocrlf = input
-	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+  editor = vim
+  autocrlf = input
+  whitespace = trailing-space,space-before-tab,indent-with-non-tab
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [color]
   ui = true
 [alias]
-      st = status
-      df = diff
-      co = checkout
-      ci = commit
-      br = branch
-      amend = commit --amend
+  st = status
+  df = diff
+  co = checkout
+  ci = commit
+  br = branch
+  amend = commit --amend
+[commit]
+  template = /home/aubin/.gitmessage.txt
