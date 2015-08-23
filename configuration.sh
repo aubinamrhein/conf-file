@@ -10,7 +10,10 @@ user_dependence(){
  apt-rdepends\
  tmux\
  tig\
- gitk
+ gitk\
+ lynx\
+ iceweasel\
+ w3m
 }
 
 powerline_install(){
