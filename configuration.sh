@@ -13,7 +13,10 @@ user_dependence(){
  gitk\
  lynx\
  iceweasel\
- w3m
+ w3m\
+ meld\
+ libreoffice\
+ python-pypcap
 }
 
 powerline_install(){
