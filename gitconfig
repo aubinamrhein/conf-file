@@ -1,20 +1,48 @@
 [user]
   name = Amrhein Aubin
   email = aubin.amrhein@wanadoo.fr
+  
 [core]
   editor = vim
   autocrlf = input
   whitespace = trailing-space,space-before-tab,indent-with-non-tab
+  
 [merge]
   tool = vimdiff
+  # Display common-ancestor blocks in conflict hunk
+  conflictStyle = diff3
+  
 [color]
+  # Enable colors in color-supporting terminals
   ui = true
+  
 [alias]
-  st = status
-  df = diff
+  amend = commit --amend
+  br = branch
   co = checkout
   ci = commit
-  br = branch
-  amend = commit --amend
+  df = diff
+  lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset'
+  st = status
+
+[push]
+  # Default push should only push the current branch to its push target,  regardless of its remote name
+  default = upstream
+  # When pushing, also push tags whose commit-ishs are now reachable upstream
+  followTags = true
+  
 [commit]
   template = /home/aubin/.gitmessage.txt
+  
+[log]
+  # Use abbrev SHAs whenever possible/relevant instead of full 40 chars
+
+[status]
+  # Display submodule rev change summaries in status
+  submoduleSummary = true
+  # Recursively traverse untracked directories to display all contents
+	showUntrackedFiles = all
+	
+[tag]
+	# Sort tags as version numbers whenever applicable, so 1.10.2 is AFTER 1.2.0.
+	sort = version:refname
